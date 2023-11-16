@@ -1,0 +1,9 @@
+{
+  "platformName": "Android",
+  "appium:platformVersion": "13",
+  "appium:udid": "emulator-5554",
+  "appium:app": "QAX_ROBOT_MOBILE\\projects\\yodapp-robot\\app\\yodapp-beta.apk",
+  "appium:deviceName": "Android Emulato",
+  "appium:automationName": "UIAutomator2",
+  "appium:autoGrantPermissions": true
+}

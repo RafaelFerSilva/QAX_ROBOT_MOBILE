@@ -9,7 +9,8 @@
   "author": "Rafael Silva",
   "license": "ISC",
   "dependencies": {
-    "appium": "^2.1.2"
+    "@appium/doctor": "^2.0.28",
+    "appium": "^2.2.2"
   },
   "devDependencies": {
     "appium-uiautomator2-driver": "^2.29.5"

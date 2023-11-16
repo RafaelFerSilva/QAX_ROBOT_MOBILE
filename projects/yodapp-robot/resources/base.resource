@@ -39,7 +39,7 @@ Go to item
     [Arguments]    ${item}    ${checkpoint}
 	Wait Until Page Contains       ${item}
 	Click Text    ${item}
-    Wait Until Page Contains     ${checkpoint}    10s
+  Wait Until Page Contains     ${checkpoint}    10s
 
 Close session
 	Close Application
@@ -50,5 +50,8 @@ Get Element positions
 	${positions}=    Get Element Location    ${LONG_CLICK_ID}
 
     [Return]    ${positions}
+  
+Back Last Screen
 
-Ba
+  Wait Until Element Is Visible    ${BACK_PAGE}
+  Click Element   ${BACK_PAGE}
