@@ -14,7 +14,7 @@ ${BACK_PAGE}=                    id=com.qaxperience.yodapp:id/ivBack
 
 *** Keywords ***
 Start Session
-	Open Application		http://localhost:4723
+	Open Application		http://localhost:4723/wd/hub
 	...						platformName=Android
 	...						deviceName=Android Emulato
 	...						automationName=UIAutomator2
@@ -45,11 +45,11 @@ Close session
 	Close Application
 
 Get Element positions
-    [Arguments]    ${locator}
+  [Arguments]    ${locator}
 
-	${positions}=    Get Element Location    ${LONG_CLICK_ID}
+	${positions}=    Get Element Location    ${locator}
 
-    [Return]    ${positions}
+  [Return]    ${positions}
   
 Back Last Screen
 
